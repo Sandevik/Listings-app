@@ -13,13 +13,13 @@ export default NextAuth({
     }),
   ],
   adapter: FirestoreAdapter({
-    apiKey: process.env.FIREBASE_API_KEY,
-    appId: process.env.FIREBASE_APP_ID,
-    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-    databaseURL: process.env.FIREBASE_DATABASE_URL,
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    apiKey: "AIzaSyDtOGh5KQFWYY6xsKYEn_-el4-q370MOME",
+    authDomain: "rent-me-183b4.firebaseapp.com",
+    projectId: "rent-me-183b4",
+    storageBucket: "rent-me-183b4.appspot.com",
+    messagingSenderId: "455505220850",
+    appId: "1:455505220850:web:ea263a9163d4437a656c6b",
+    measurementId: "G-5BBQXRWVGE"
     // Optional emulator config (see below for options)
     
   }),
