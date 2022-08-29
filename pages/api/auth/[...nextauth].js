@@ -21,7 +21,6 @@ export default NextAuth({
     appId: "1:455505220850:web:ea263a9163d4437a656c6b",
     measurementId: "G-5BBQXRWVGE"
     // Optional emulator config (see below for options)
-    
   }),
   // ...
 });
