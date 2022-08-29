@@ -1,0 +1,12 @@
+.footer{
+    background: linear-gradient(to right, var(--green) 25%, rgb(85, 184, 81));
+    height:4em;
+    color: var(--white);
+    display: grid;
+    place-items: center;
+}
+.link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

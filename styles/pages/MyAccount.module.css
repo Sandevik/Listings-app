@@ -1,0 +1,33 @@
+@import url("../Layout.module.css");
+
+.wrapper{min-height: var(--fill-screen);}
+
+.semiheader{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 1em;
+}
+.changeButton{
+    border: none;
+    padding: 10px 20px;
+    font-size: larger;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--black);
+    transition: color .2s ease-in, background .2s ease-in-out, border-radius .2s ease-in-out;
+    border-radius: 0px;
+}
+.btnActive{
+    position: relative;
+    background: var(--green);
+    border-radius: 10px;
+    color: var(--white);
+}
+.page{
+    background: var(white);
+    min-height: 15em;
+    min-height: var(--fill-screen);
+}

@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    place-items: center;
+    min-height: calc(var(--fill-screen) - 4em);
+    width: 100%;
+    gap: 20px;
+    grid-template-rows: 100px 200px;
+}
+
+.container button{
+    padding: 1em 2em;
+    font-size: 24px;
+    border:none;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--green), rgb(146, 238, 146));
+}

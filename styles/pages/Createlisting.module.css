@@ -1,0 +1,54 @@
+@import url("../Layout.module.css");
+
+.wrapper{
+    min-height: var(--fill-screen);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1em;
+    
+}
+
+.form{
+    background: linear-gradient(135deg, var(--green), rgb(146, 238, 146));
+    height: 95%;
+    width: 35%;
+    padding:2em;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--white);
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.form legend{
+    background-color: var(--green);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.group{
+    display: flex;
+    gap: 20px;
+}
+.group input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: var(black);
+}
+.select{
+    text-transform: capitalize;
+}
+
+.form button{
+    background: linear-gradient(135deg, rgb(241, 241, 107), rgb(215, 226, 119));
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.preview{
+    width: 65vw;
+}
+

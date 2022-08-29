@@ -1,0 +1,94 @@
+.container{
+    position: relative;
+   
+    min-height: 335px;
+    cursor: pointer;
+
+
+   /* -webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.49); 
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.19);*/
+}
+
+.next, .prev{
+    position: absolute;
+    top:37%;
+    z-index: 1;
+    border:none;
+    opacity: .5;
+    height: 24px;
+    width: 24px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    transition: opacity .2s ease-in-out;
+}
+.next:hover, .prev:hover{
+    opacity: 1;
+}
+
+.next{
+    right: 5px;
+}
+
+.prev{
+    left: 5px;
+    transform: rotate(180deg);
+}
+
+.image{
+    position: relative;
+    width: 100%;
+    object-fit: cover;    
+    border-radius: 10px;
+   
+}
+
+.dotContainer{
+    position: absolute;
+    display:flex;
+    gap: 5px;
+    top:70%;
+    left: 50%;
+    z-index: 1;
+}
+.dot{
+    background: rgb(255, 255, 255);
+    padding: 4px;
+    border-radius: 50%;
+    
+    opacity: .5;
+}
+.on{
+    opacity: 1;
+}
+
+
+.text{
+    padding:2px 5px;
+    display:flex;
+    gap: 2px;
+    flex-direction: column;
+}
+.price{
+    font-weight: bolder;
+    font-size:17px;
+    display: flex;
+    gap:7px;
+}
+.location{
+    font-size:12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.type{
+    text-transform: capitalize;
+}

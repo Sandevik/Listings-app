@@ -1,0 +1,36 @@
+.main{
+    display: flex;
+    gap: 7em;
+    list-style-type: none;
+    background: linear-gradient(35deg , var(--green) 25%, rgb(85, 184, 81));
+    height: 3em;
+    align-items: center;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.main::after{
+    content: "";
+    height: 3em;
+    width: 80px;
+    background:linear-gradient(to right, transparent 10%, white 90%);
+    opacity: .7;
+    position: absolute;
+    right: 0;
+}
+
+.main li {
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--white);
+    transition: color .17s ease-in-out;
+    
+}
+
+.main li:hover{
+    color: var(--black);
+}
+
+.main::-webkit-scrollbar{
+    display: none;
+}

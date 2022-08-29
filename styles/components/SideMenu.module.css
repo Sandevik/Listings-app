@@ -1,0 +1,106 @@
+.textAndIcon{
+    display: flex;
+    justify-content: space-between;
+    width: 8em;
+    cursor: pointer;
+    transform: translate(-0px);
+    transition: opacity 0.1s ease-out, transform 0.2s ease-in-out;
+    align-items: center;
+ 
+}
+
+.textAndIcon:hover{
+    opacity: .7;
+    transform: translate(-10px);
+}
+
+
+.firstSec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nullifyBtn{
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-size: 16px;
+    display: flex;
+    
+}
+
+
+@media screen and (max-width: 2650px){
+    .container{
+        position: fixed;
+        top:4;
+        left: calc(100% - 250px);
+        width: 250px;
+        transform: translate(400px);
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        opacity:0;
+        height: calc(var(--fill-screen) - 10px);
+        z-index: 1;
+        background: var(--black);
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: .5em;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-top: 6px;
+        gap: 10px;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    
+    .additional{
+        display: none;
+    }
+
+    .active{
+        opacity:1;
+        transform: translate(0px);
+    
+        
+    }
+}
+
+
+
+/*------------------------V-Smaller-V----------------------------------------------------*/
+@media screen and (max-width: 768px){
+    
+    .container{
+        position: fixed;
+        top:4;
+        left:0;
+        width: 100vw;
+        transform: translate(0, -400px);
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        opacity:0;
+        height:12em;
+        z-index: 1;
+        background: var(--black);
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: .5em;
+        border-top-left-radius: 0px;
+        margin-top: 0px;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .additional{
+        display: block;
+    }
+
+    .active{
+        opacity:1;
+        transform: translate(0px, 0px);
+    }
+}

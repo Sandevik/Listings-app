@@ -1,0 +1,23 @@
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-inline:5px;
+}
+
+.button{
+    padding: 10px 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(35deg , var(--green) 25%, rgb(147, 243, 144));
+    transition: background .5s ease-in-out, color .15s ease-in;
+    color: var(--white);
+}
+.button:hover{
+    background: linear-gradient(-125deg, rgb(234, 255, 138) 25%, rgb(214, 253, 129));
+    color: var(--black);
+}
+

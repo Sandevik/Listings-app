@@ -1,0 +1,22 @@
+
+
+
+@media screen and (max-width:2560px) {
+    .container{
+        position: relative;
+        z-index: -10;
+        min-height: var(--fill-screen);
+    }
+
+
+
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        z-index: -10;
+        position: relative;
+        transform: translate(0px, -10em);
+        min-height: var(--fill-screen);
+    }
+}
